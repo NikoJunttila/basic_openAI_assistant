@@ -24,8 +24,12 @@ const openai = new OpenAI({
 // Use your existing Assistant ID
 const ASSISTANT_ID = process.env.OPENAI_ASSISTANT_ID; // Replace with your Assistant ID
 
+app.get('/', (req, res) => {
+    res.send("GET Request Called")
+})
+
 // Endpoint to handle chat requests
-app.post('/chat', async (req, res) => {
+app.post('/', async (req, res) => {
     try {
         const { message } = req.body;
         
