@@ -1,1 +1,1 @@
-Basic implementation of chatgpt assitant server.
+Basic implementation of chatgpt assistant server.
